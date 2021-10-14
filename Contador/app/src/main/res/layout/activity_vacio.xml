@@ -18,4 +18,5 @@
         app:layout_constraintVertical_bias="0.896"
         app:srcCompat="@drawable/alberto2"
         tools:layout_editor_absoluteX="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

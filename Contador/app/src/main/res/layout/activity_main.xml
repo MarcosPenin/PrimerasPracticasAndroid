@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9BB879"
-    tools:context=".MainActivity">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    android:id="@+id/Pantalla1"
+    >
+
 
     <TextView
         android:id="@+id/textView2"

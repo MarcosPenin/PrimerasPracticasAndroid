@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,12 +18,21 @@ class MainActivity : AppCompatActivity() {
         val z=findViewById<TextView>(R.id.textView)
 
         var contador = 0
+        var v=findViewById<ConstraintLayout>(R.id.Pantalla1);
+        var color=true
 
         x.setOnClickListener(){
             contador++
-
            y.setText(contador.toString())
 
+            if (color) {
+                v.setBackgroundResource(android.R.color.holo_green_light);
+                color = false;
+            } else {
+                v.setBackgroundResource(android.R.color.white);
+                color = true;
+
+            }
             if(contador>19){
                 z.setText("No sigas, es peligroso")
             }
@@ -40,6 +50,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
-
 }
